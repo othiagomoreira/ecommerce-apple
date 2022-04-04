@@ -1,0 +1,94 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 9
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 3
+    },
+    {
+      "id": 4,
+      "amount": 4
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 2
+    },
+    {
+      "id": 7,
+      "amount": 2
+    },
+    {
+      "id": 8,
+      "amount": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "iPhone 13 Pro",
+      "description": "O iPhone definitivo",
+      "price": 9.176,
+      "image": "https://www.apple.com/v/iphone/home/be/images/overview/compare/compare_iphone_13_pro__bpn3x8hs692a_small.jpg"
+    },
+    {
+      "id": 2,
+      "title": "iPhone 12",
+      "price": 5.505,
+      "description": "Impressionante como sempre",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1617135051000"
+    },
+    {
+      "id": 3,
+      "title": "MacBook Air",
+      "price": 12.508,
+      "description": "Alta performance",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-gold-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1633027804000"
+    },
+    {
+      "id": 4,
+      "title": "AirPods Max",
+      "price": 6.691,
+      "description": "Áudio da melhor qualidade",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-pink-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022365000"
+    },
+    {
+      "id": 5,
+      "title": "iPad Pro",
+      "price": 10.391,
+      "description": "Alta resolução",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_BR?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864717000"
+    },
+    {
+      "id": 6,
+      "title": "Apple Watch Series 7",
+      "price": 5.099,
+      "description": "Ideal para nadar",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MKUU3_VW_34FR+watch-45-alum-starlight-nc-7s_VW_34FR_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171096000%2C1631661833000"
+    },
+    {
+      "id": 7,
+      "title": "Apple Studio Display",
+      "price": 17.999,
+      "description": "Paixão a primeira vista",
+      "image": "https://www.apple.com/v/studio-display/a/images/overview/pairs/hw_studio_display__ej5tuii2c9iu_small.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Beats Fit Pro",
+      "price": 2.501,
+      "description": "Autêntico fone de ouvido sem fio ",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MK2H3?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1634663497000"
+    }
+  ]
+}
