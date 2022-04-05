@@ -14,6 +14,7 @@ export const Container = styled.header`
     justify-content: space-between;
     align-items: center;
     height: 3rem;
+    margin: 0 auto;
 
     a {
       color: white;

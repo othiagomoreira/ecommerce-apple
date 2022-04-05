@@ -3,7 +3,8 @@ import { ProductsProvider } from './hooks/useProducts';
 import { GlobalStyle } from './styles/global';
 
 import { Header } from './components/header';
-import { Home } from './pages/Home';
+import { Routes } from './routes';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <ProductsProvider>
         <GlobalStyle />
         <Header />
-        <Home />
+        <Routes />
+        <ToastContainer autoClose={3000} />
       </ProductsProvider>
     </BrowserRouter>
   );

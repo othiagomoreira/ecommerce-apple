@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const GlobalStyle = createGlobalStyle`
 :root {
@@ -48,7 +49,6 @@ button {
 
 .container {
   max-width: 1100px;
-  margin: auto;
   width: 90%;
 }
 

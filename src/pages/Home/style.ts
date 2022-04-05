@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.main`
   margin: 6rem auto 3rem;
-  width: 90%;
-
-  max-width: 1100px;
 `;
 
 export const ProductList = styled.ul`

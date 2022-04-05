@@ -12,12 +12,24 @@ interface ProductsFormatted extends Products {
   priceFormatted: string;
 }
 
+interface CartItemsmount {
+  [key: number]: number;
+}
+
 export const Home = () => {
-  const [products, setProducts] = useState<ProductsFormatted[]>([]);
+  const [infoProducts, setInfoProducts] = useState<ProductsFormatted[]>([]);
 
-  const { addProduct } = useProducts();
+  const { addProduct, products } = useProducts();
 
-  const info = [];
+  // Passa por todos os itens do array
+  const cartItemsmount = products.reduce((sumAmount, product) => {
+    const newSumAmount = { ...sumAmount };
+    // Cria um objeto com dinamico que recebe o id do produto como key, e a quantidade desejada do mesmo como value
+    newSumAmount[product.id] = product.desiredAmount;
+
+    return newSumAmount;
+  }, {} as CartItemsmount);
+
 
   useEffect(() => {
     async function loadProducts() {
@@ -28,7 +40,7 @@ export const Home = () => {
         return { ...product, priceFormatted: formatPrice(product.price) };
       });
 
-      setProducts(data);
+      setInfoProducts(data);
     }
 
     loadProducts();
@@ -38,12 +50,10 @@ export const Home = () => {
     addProduct(id)
   };
 
-
-
   return (
-    <Container>
+    <Container className="container">
       <ProductList>
-        {products.map((product) => (
+        {infoProducts.map((product) => (
           <li key={product.id}>
             <img src={product.image} alt={product.title} />
             <strong>{product.title}</strong>
@@ -53,7 +63,7 @@ export const Home = () => {
             <button type="button" onClick={() => handleAddProduct(product.id)}>
               <div>
                 <FaOpencart />
-                {info.length <= 0 ? '0' : info.length}
+                {cartItemsmount[product.id] || 0} {/*Se o objeto com esse id não existir exiba o 0*/}
               </div>
 
               <span>Comprar</span>
