@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 :root {
-  --background: #F5F5F7;
+  --body-bg: #F5F5F7;
+  --header-bg: #333333
 }
 
 
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--body-bg);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -43,6 +44,12 @@ button {
 [disabled] {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  width: 90%;
 }
 
 `;

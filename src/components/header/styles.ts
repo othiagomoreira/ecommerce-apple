@@ -2,16 +2,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
-  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-bg);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 12px;
 
   nav {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3rem;
 
     a {
       color: white;
@@ -24,7 +26,7 @@ export const Container = styled.header`
     }
 
     svg {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 `;
